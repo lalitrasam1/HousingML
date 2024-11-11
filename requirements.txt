@@ -1,0 +1,12 @@
+pandas
+numpy
+seaborn
+matplotlib
+scikit-learn
+catboost
+xgboost
+Flask
+PyYAML
+ensure
+python-box==6.0.2
+#-e .
