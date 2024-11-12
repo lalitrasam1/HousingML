@@ -15,3 +15,7 @@ conda deactivate
 python setup.py build
 
 python setup.py install
+
+git add .
+ git commit -m "first"
+  git push origin main

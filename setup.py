@@ -11,15 +11,15 @@ def get_requirements(file_path:str)->List[str]:
         requirements=file_obj.readlines()
         requirements=[req.replace("\n","") for req in requirements]
 
-        '''if HYPEN_E_DOT in requirements:
-            requirements.remove(HYPEN_E_DOT)'''
+        if HYPEN_E_DOT in requirements:
+            requirements.remove(HYPEN_E_DOT)
     
     return requirements
 
 
 setup(
 name='HOUSINGML',
-version='0.0.1',
+version='0.0.2',
 author='lalit',
 author_email='rasamlalit1@gmail.com',
 packages=find_packages(),
