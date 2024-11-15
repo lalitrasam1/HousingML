@@ -13,9 +13,11 @@ conda activate "E:\Study\Machine learning\GitCodes\HousingML\housing"
 conda deactivate
 
 python setup.py build
-
+ pip install -r requirements.txt
 python setup.py install
-
+pip install ipykernel
 git add .
  git commit -m "first"
   git push origin main
+
+  https://www.kaggle.com/code/harshwalia/end-to-end-ml-project-all-steps-in-detail

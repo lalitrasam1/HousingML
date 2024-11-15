@@ -1,0 +1,6 @@
+Dataingestion:
+  root_path : artifacts
+  file_path : E:\Study\Machine learning\GitCodes\HousingML\DataSet\housing.csv
+  row_data_path : artifacts/data_ingestion/row_data.csv
+  train_data_path : artifacts/data_ingestion/train.csv
+  test_data_path : artifacts/data_ingestion/test.csv
