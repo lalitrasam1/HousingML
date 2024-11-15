@@ -51,6 +51,10 @@ coverage.xml
 .pytest_cache/
 cover/
 housing/
+artifacts/
+logs/
+artifacts
+artifacts/data_ingestion/
 
 # Translations
 *.mo
