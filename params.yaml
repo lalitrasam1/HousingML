@@ -1,0 +1,6 @@
+XGB_parameters:
+  n_estimators: [75, 100, 300]
+  learning_rate: [0.01, 0.1, 0.2]
+  max_depth: [3]
+  subsample: [0.8, 1.0]
+  colsample_bytree: [0.8, 1.0]

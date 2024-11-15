@@ -5,6 +5,8 @@ from ensure import ensure_annotations
 from pathlib import Path
 from box import ConfigBox
 import sys
+import os
+import pandas as pd
 from src.HOUSINGML.constants.constants import Config_File_path
 
 def read_Config(Path_to_Yaml=Config_File_path):
@@ -17,3 +19,16 @@ def read_Config(Path_to_Yaml=Config_File_path):
     except Exception as e:
         logging.error(str(CustomException(error_message=e, error_detail=sys)))
         raise CustomException(error_message=e, error_detail=sys)
+    
+def save_object(filePath, obj):
+    try:
+        os.makedirs(os.path.dirname(filePath),exist_ok=True)
+        pd.to_pickle(obj=obj,filepath_or_buffer=filePath)
+    except Exception as e:
+        logging.error(str(CustomException(error_message=e, error_detail=sys)))
+        raise CustomException(error_message=e, error_detail=sys)
+    
+
+def load_object(filepath):
+    obj=pd.read_pickle(filepath)
+    return obj
