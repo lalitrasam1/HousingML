@@ -9,4 +9,8 @@ Flask
 PyYAML
 ensure
 python-box==6.0.2
+fastapi
+pydantic
+typing
+uvicorn
 #-e .

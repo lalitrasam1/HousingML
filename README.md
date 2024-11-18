@@ -12,6 +12,8 @@ conda activate "E:\Study\Machine learning\GitCodes\HousingML\housing"
 
 conda deactivate
 
+uvicorn main:app --reload
+
 python setup.py build
  pip install -r requirements.txt
 python setup.py install

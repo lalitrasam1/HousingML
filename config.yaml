@@ -17,3 +17,7 @@ ModelEvaluation :
   model_path : artifacts/model_path/model.pkl
   preprocessor_path : artifacts/data_transformation/preprocessor.pkl
   test_data_path : artifacts/data_ingestion/test.csv
+
+ModelPrediction :
+  model_path : artifacts/model_path/model.pkl
+  preprocessor_path : artifacts/data_transformation/preprocessor.pkl

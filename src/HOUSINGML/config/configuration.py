@@ -27,3 +27,8 @@ class getmodelEvaluationConfig:
     model_path: Path = Config.ModelEvaluation.model_path
     preprocessor: Path = Config.ModelEvaluation.preprocessor_path
     test_data_path : Path = Config.ModelEvaluation.test_data_path
+
+@dataclass
+class getmodelPredictionConfig:
+    model_path: Path = Config.ModelPrediction.model_path
+    preprocessor: Path = Config.ModelPrediction.preprocessor_path
